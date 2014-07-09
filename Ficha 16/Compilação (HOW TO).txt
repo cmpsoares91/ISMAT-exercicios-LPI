@@ -1,0 +1,15 @@
+Para criar o executável são possivel compilar o programa de, pelo menos, duas maneiras:
+
+1) Directamente (Cria o .o e depois compila logo de seguida criando o .exe, de uma vez só):
+gcc progf16.c array.c -ansi -Wall -o progf16.exe
+
+2) Criar o .o e depois compilar:
+
+Primeiro:
+gcc -ansi -Wall -c array.c
+
+Resultado:
+array.o
+
+Depois:
+gcc progf16.c array.o -ansi -Wall -o progf16.exe
